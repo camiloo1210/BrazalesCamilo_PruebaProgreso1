@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<BrazalesCamilo_PruebaProgreso1.Models.Celular>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Celulares";
 }
 
-<h1>Index</h1>
+<h1>Lista Celulares</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" type="button" class="btn btn-success">Crear Telefono</a>
 </p>
 <table class="table">
     <thead>
@@ -37,9 +37,9 @@
                 @Html.DisplayFor(modelItem => item.precio)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_celular">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_celular">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_celular">Delete</a>
+                    <a type="button" class="btn btn-warning"  asp-action="Edit" asp-route-id="@item.Id_celular">Editar</a> |
+                    <a type="button" class="btn btn-info" asp-action="Details" asp-route-id="@item.Id_celular">Informacion</a> |
+                    <a type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Id_celular">Eliminar</a>
             </td>
         </tr>
 }

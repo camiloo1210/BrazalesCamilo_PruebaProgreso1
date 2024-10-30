@@ -1,12 +1,12 @@
 ﻿@model BrazalesCamilo_PruebaProgreso1.Models.Celular
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Crear Telefono";
 }
 
-<h1>Create</h1>
+<h1>Crear Telefono</h1>
 
-<h4>Celular</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -27,15 +27,16 @@
                 <input asp-for="precio" class="form-control" />
                 <span asp-validation-for="precio" class="text-danger"></span>
             </div>
+            <br />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
-
+<br />
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" type="button" class="btn btn-info">Regresar</a>
 </div>
 
 @section Scripts {

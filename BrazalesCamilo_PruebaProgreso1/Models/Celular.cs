@@ -11,7 +11,9 @@ namespace BrazalesCamilo_PruebaProgreso1.Models
         [DisplayName("Modelo")]
         public string CelularNombre { get; set; }
         [Required]
+        [DisplayName("Año")]
         public int anio { get; set; }
+        [DisplayName("Precio")]
         [Required]
         public double precio { get; set; }
     }
